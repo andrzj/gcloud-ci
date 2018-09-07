@@ -1,9 +1,10 @@
-FROM alpine:3.8
+# FROM alpine:3.8
+FROM mhart/alpine-node:8
 
 ADD setup.sh /root
 
 # Install CA certs, openssl to https downloads, python for gcloud sdk
-RUN apk add --update make ca-certificates openssl python \
+ RUN apk add --update make ca-certificates openssl python wget \
     && update-ca-certificates \
 # Download and install Google Cloud SDK.
     && mkdir /gcloud \

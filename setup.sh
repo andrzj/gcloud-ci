@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # Authenticate using the service account stored variables
 if [ -n $NPM_TOKEN ]
 then
