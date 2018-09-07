@@ -1,6 +1,6 @@
-# GCloud Ready Docker Image
+# GCloud + Node 8 Docker Image
 
-An Alpine Docker image containing Google Cloud SDK + Beta Components
+An Alpine Docker image containing Google Cloud SDK & Beta Components + Node 8
 
 ## How to use
 
@@ -18,4 +18,10 @@ $ docker run -d --env GCLOUD_SERVICE_KEY=foo --env GCP_PROJECT_ID=bar --env NPM_
 
 ```
 $ docker build -t gcloud-ci .
+```
+
+# Interacting
+
+```
+$ docker exec -it gcloud-ci sh
 ```
